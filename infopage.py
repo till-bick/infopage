@@ -43,3 +43,18 @@ export default function Home() {
     </div>
   );
 }
+
+// Custom 500 Error Page
+export function Custom500() {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
+      <h1 className="text-4xl font-bold text-red-500">500 - Server Fehler</h1>
+      <p className="mt-2 text-gray-300">Es ist ein unerwarteter Fehler aufgetreten.</p>
+      <Link href="/">
+        <a className="mt-4 px-6 py-2 bg-red-500 text-black font-bold rounded-lg shadow-lg hover:bg-red-700 transition">
+          Zurück zur Startseite
+        </a>
+      </Link>
+    </div>
+  );
+}
